@@ -1,5 +1,5 @@
 
-# RobbingHood: an ai trivia assistant. 
+# RobbingHood: a Perplexity powered trivia assistant. 
 
 Bottom of this readme contains a couple feature suggestions + ways to expand this for anyone coming across this. Would also appreciate a github star if you're reading this :)
 
