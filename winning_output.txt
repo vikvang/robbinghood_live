@@ -1,0 +1,416 @@
+lol this text below contains the terminal logs from the robinhood trivia contest
+
+Extracted text (0.54s):
+----------------------------------------
+134,880
+O
+What is the underlying technology of
+most cryptocurrencies like Bitcoin and
+Ethereum?
+Blockchain
+L
+Cloud Computing
+The Internet of Things
+----------------------------------------
+Processing text with GPT-4-Turbo...
+Processing text with Perplexity sonar-pro...
+Processing text with Perplexity sonar...
+
+GPT4 RESULT: Blockchain (0.77s)
+
+SONAR RESULT: **Blockchain** (1.67s)
+
+SONAR_PRO RESULT: Blockchain (2.71s)
+
+============================================================
+⚠️ Sonar Pro and GPT-4 agree, but Sonar differs
+============================================================
+
+Ready for next capture. Press SPACE to capture or ESC to return to menu.
+
+Image captured, processing...
+Extracting text with OCR...
+
+Extracted text (0.43s):
+----------------------------------------
+126,633
+L
+How many times a year do US-based
+public companies report on their
+earnings?
+----------------------------------------
+Processing text with GPT-4-Turbo...
+Processing text with Perplexity sonar-pro...
+Processing text with Perplexity sonar...
+
+GPT4 RESULT: Quarterly (0.77s)
+
+SONAR RESULT: 4 times a year. (1.70s)
+
+SONAR_PRO RESULT: Based on the information provided in the search results, the correct answer is:
+
+4
+
+US-based public companies report their earnings quarterly, which means 4 times per year. (3.31s)
+
+============================================================
+❌ All models give different answers
+============================================================
+
+Ready for next capture. Press SPACE to capture or ESC to return to menu.
+
+Image captured, processing...
+Extracting text with OCR...
+
+Extracted text (0.39s):
+----------------------------------------
+114,952
+L
+Which federal agency is responsible
+for regulating the stock market?
+Federal Trade Commission
+Federal Reserve System
+Securities & Exchange Commission
+GOCLA
+----------------------------------------
+Processing text with GPT-4-Turbo...
+Processing text with Perplexity sonar-pro...
+Processing text with Perplexity sonar...
+
+GPT4 RESULT: Securities & Exchange Commission (1.36s)
+
+SONAR RESULT: **Securities & Exchange Commission** (1.77s)
+
+SONAR_PRO RESULT: Securities & Exchange Commission (2.92s)
+
+============================================================
+⚠️ Sonar Pro and GPT-4 agree, but Sonar differs
+============================================================
+
+Ready for next capture. Press SPACE to capture or ESC to return to menu.
+
+Image captured, processing...
+Extracting text with OCR...
+
+Extracted text (0.27s):
+----------------------------------------
+77,823
+L
+Approximately what was Nvidia's
+(NVDA) market cap as of the end of
+2024 (12/31/24)?
+$2 trillion
+$3 trillion
+$6 trillion
+----------------------------------------
+Processing text with GPT-4-Turbo...
+Processing text with Perplexity sonar-pro...
+Processing text with Perplexity sonar...
+
+GPT4 RESULT: $3 trillion (0.76s)
+
+SONAR RESULT: $3 trillion (1.68s)
+
+SONAR_PRO RESULT: $3 trillion (2.51s)
+
+============================================================
+✅ All models agree on the answer!
+============================================================
+
+Ready for next capture. Press SPACE to capture or ESC to return to menu.
+
+Image captured, processing...
+Extracting text with OCR...
+
+Extracted text (0.36s):
+----------------------------------------
+46,206
+L
+What type of asset could be protected
+by FDIC Insurance?
+Options
+Cryptocurrency
+Cash
+----------------------------------------
+Processing text with GPT-4-Turbo...
+Processing text with Perplexity sonar-pro...
+Processing text with Perplexity sonar...
+
+GPT4 RESULT: Cash (0.72s)
+
+SONAR_PRO RESULT: Cash (3.05s)
+
+SONAR RESULT: **Cash** (5.57s)
+
+============================================================
+⚠️ Sonar Pro and GPT-4 agree, but Sonar differs
+============================================================
+
+Ready for next capture. Press SPACE to capture or ESC to return to menu.
+
+Image captured, processing...
+Extracting text with OCR...
+
+Extracted text (0.34s):
+----------------------------------------
+38,880
+L
+Which of the following
+cryptocurrencies uses POS (proof-of-
+stake) as the consensus algorithm?
+Bitcoin
+Dogecoin
+Ethereum
+----------------------------------------
+Processing text with GPT-4-Turbo...
+Processing text with Perplexity sonar-pro...
+Processing text with Perplexity sonar...
+
+GPT4 RESULT: Ethereum (0.73s)
+
+SONAR RESULT: Ethereum (1.67s)
+
+SONAR_PRO RESULT: Ethereum (2.55s)
+
+============================================================
+✅ All models agree on the answer!
+============================================================
+
+Ready for next capture. Press SPACE to capture or ESC to return to menu.
+
+Image captured, processing...
+Extracting text with OCR...
+
+Extracted text (0.32s):
+----------------------------------------
+27,802
+L
+When was the New York Stock
+Exchange established?
+1792
+1800
+1913
+----------------------------------------
+Processing text with GPT-4-Turbo...
+Processing text with Perplexity sonar-pro...
+Processing text with Perplexity sonar...
+
+GPT4 RESULT: 1792 (1.27s)
+
+SONAR RESULT: 1792 (1.49s)
+
+SONAR_PRO RESULT: 1792 (2.21s)
+
+============================================================
+✅ All models agree on the answer!
+============================================================
+
+Ready for next capture. Press SPACE to capture or ESC to return to menu.
+
+Image captured, processing...
+Extracting text with OCR...
+
+Extracted text (0.27s):
+----------------------------------------
+9,002
+Which of these people is one of the
+creators of Dogecoin (DOGE)?
+Billy Markus
+Elon Musk
+Satoshi Nakamoto
+----------------------------------------
+Processing text with GPT-4-Turbo...
+Processing text with Perplexity sonar-pro...
+Processing text with Perplexity sonar...
+
+GPT4 RESULT: Billy Markus (0.68s)
+
+SONAR RESULT: Billy Markus (1.44s)
+
+SONAR_PRO RESULT: Billy Markus (2.67s)
+
+============================================================
+✅ All models agree on the answer!
+============================================================
+
+Ready for next capture. Press SPACE to capture or ESC to return to menu.
+
+Image captured, processing...
+Extracting text with OCR...
+
+Extracted text (0.39s):
+----------------------------------------
+7,562
+Which of these people is a former
+Chair of the Federal Reserve?
+Alexander Hamilton
+Charles Hamlin
+Franklin D. Roosevelt
+----------------------------------------
+Processing text with GPT-4-Turbo...
+Processing text with Perplexity sonar-pro...
+Processing text with Perplexity sonar...
+
+GPT4 RESULT: Charles Hamlin (0.73s)
+
+SONAR RESULT: Charles Hamlin (1.83s)
+
+SONAR_PRO RESULT: Charles Hamlin (3.14s)
+
+============================================================
+✅ All models agree on the answer!
+============================================================
+
+Ready for next capture. Press SPACE to capture or ESC to return to menu.
+
+Image captured, processing...
+Extracting text with OCR...
+
+Extracted text (0.39s):
+----------------------------------------
+L
+4,209
+O
+Of these three cryptocurrencies,
+which had the highest market cap as
+of the end of January 2025?
+Chainlink (LINK)
+Dogecoin (DOGE)
+Solana (SOL)
+----------------------------------------
+Processing text with GPT-4-Turbo...
+Processing text with Perplexity sonar-pro...
+Processing text with Perplexity sonar...
+
+GPT4 RESULT: Solana (SOL) (0.85s)
+
+SONAR RESULT: Solana (SOL) (1.72s)
+
+SONAR_PRO RESULT: Solana (SOL) (3.14s)
+
+============================================================
+✅ All models agree on the answer!
+============================================================
+
+Ready for next capture. Press SPACE to capture or ESC to return to menu.
+
+Image captured, processing...
+Extracting text with OCR...
+
+Extracted text (0.27s):
+----------------------------------------
+3,897
+Which of these stocks had the highest
+percentage returns from the start of
+2024 to the end of 2024?
+AppLovin (APP)
+Palantir (PLTR)
+Nvidia (NVDA)
+----------------------------------------
+Processing text with GPT-4-Turbo...
+Processing text with Perplexity sonar-pro...
+Processing text with Perplexity sonar...
+
+GPT4 RESULT: Nvidia (NVDA) (1.15s)
+
+SONAR RESULT: Nvidia (NVDA) (1.88s)
+
+SONAR_PRO RESULT: AppLovin (APP) (2.71s)
+
+============================================================
+⚠️ Sonar and GPT-4 agree, but Sonar Pro differs
+============================================================
+
+Ready for next capture. Press SPACE to capture or ESC to return to menu.
+
+Image captured, processing...
+Extracting text with OCR...
+
+Extracted text (0.41s):
+----------------------------------------
+3,297
+TIME'S UP
+0
+L
+Which of these stocks had the highest
+percentage returns from the start of
+2024 to the end of 2024?
+AppLovin APP
+Palantir (PLTR)
+Nvidia (NVDA)
+----------------------------------------
+Processing text with GPT-4-Turbo...
+Processing text with Perplexity sonar-pro...
+Processing text with Perplexity sonar...
+
+GPT4 RESULT: Nvidia (NVDA) (0.91s)
+
+SONAR_PRO RESULT: Palantir (PLTR) (2.71s)
+
+SONAR RESULT: I don't have specific data on the percentage returns for Palantir (PLTR) and Nvidia (NVDA) from the start of 2024 to the end of 2024. However, based on the information available, AppLovin (APP) has shown significant growth and performance in 2024. Without specific data for the other stocks, it's difficult to definitively choose. However, if we consider AppLovin's strong financial performance and growth, it might be a strong contender. 
+
+Given the lack of specific data for all options, I cannot accurately determine the correct answer without more information. (4.64s)
+
+============================================================
+❌ All models give different answers
+============================================================
+
+Ready for next capture. Press SPACE to capture or ESC to return to menu.
+
+Image captured, processing...
+Extracting text with OCR...
+
+Extracted text (0.37s):
+----------------------------------------
+Which of these stocks had the highest
+percentage returns from the start of
+2024 to the end of 2024?
+AppLovin (APP
+Palantir (PLTR)
+Nvidia (NVDA)
+----------------------------------------
+Processing text with GPT-4-Turbo...
+Processing text with Perplexity sonar-pro...
+Processing text with Perplexity sonar...
+
+SONAR RESULT: AppLovin (APP) (1.94s)
+
+SONAR_PRO RESULT: AppLovin (APP) (3.14s)
+
+GPT4 RESULT: I currently do not have access to real-time or future data including stock market performance for 2024. To find out which stock had the highest percentage return from the start to the end of 2024, you would need to access up-to-date financial reports or databases that provide stock performance information for the year 2024. (4.39s)
+
+============================================================
+⚠️ Perplexity models agree, but GPT-4 differs
+============================================================
+
+Ready for next capture. Press SPACE to capture or ESC to return to menu.
+
+Image captured, processing...
+Extracting text with OCR...
+
+Extracted text (0.31s):
+----------------------------------------
+3,297
+TIME'S UP
+Which of these stocks had the highest
+percentage returns from the start of
+2024 to the end of 2024?
+AppLovin (APP)
+Palantir (PLTR)
+Nvidia (NVDA)
+----------------------------------------
+Processing text with GPT-4-Turbo...
+Processing text with Perplexity sonar-pro...
+Processing text with Perplexity sonar...
+
+GPT4 RESULT: Nvidia (NVDA) (0.91s)
+
+SONAR RESULT: AppLovin (APP) (1.81s)
+
+SONAR_PRO RESULT: AppLovin (APP) (2.67s)
+
+============================================================
+⚠️ Perplexity models agree, but GPT-4 differs
+============================================================
+
+Ready for next capture. Press SPACE to capture or ESC to return to menu.
