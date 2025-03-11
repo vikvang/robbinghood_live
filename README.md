@@ -1,5 +1,5 @@
 
-# RobbingHood: a Perplexity powered trivia assistant.
+# RobbinHood: a Perplexity powered trivia assistant.
 
 Instructions for anyone wanting to make PRs/additions: Bottom of this readme contains a couple feature suggestions + ways to expand this for anyone coming across this. 
 For any new features that you want to add, the current application is set up as a command line "game" with various modes. For ex, "option 1" for single sonar, "option 2" for triple check mode, etc.
