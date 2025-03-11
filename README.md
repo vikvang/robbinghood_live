@@ -1,7 +1,12 @@
 
-# RobbingHood: a Perplexity powered trivia assistant. 
+# RobbingHood: a Perplexity powered trivia assistant.
 
-Bottom of this readme contains a couple feature suggestions + ways to expand this for anyone coming across this. Would also appreciate a github star if you're reading this :)
+Instructions for anyone wanting to make PRs/additions: Bottom of this readme contains a couple feature suggestions + ways to expand this for anyone coming across this. 
+For any new features that you want to add, the current application is set up as a command line "game" with various modes. For ex, "option 1" for single sonar, "option 2" for triple check mode, etc.
+If you propose any changes, edit the ```core/app.py``` file to modify the workflow and route it to your "mode."
+
+Would also appreciate a github star if you're reading this :)
+
 
 Get search grounded, up-to-date, accurate responses for any multiple choice trivia question within seconds (less than 3 on average). It combines the power of multiple AI models to give you the best possible answer under any timed based trivia game.
 
