@@ -1,6 +1,8 @@
 
 # RobbinHood: a Perplexity powered trivia assistant.
 
+Link to the tweet where I explain how this works: https://x.com/vikvang1/status/1899154542291223028?s=46&t=kXMMVRmJirhTTP_CvHVf-w
+
 Instructions for anyone wanting to make PRs/additions: Bottom of this readme contains a couple feature suggestions + ways to expand this for anyone coming across this. 
 For any new features that you want to add, the current application is set up as a command line "game" with various modes. For ex, "option 1" for single sonar, "option 2" for triple check mode, etc.
 If you propose any changes, edit the ```core/app.py``` file to modify the workflow and route it to your "mode."
