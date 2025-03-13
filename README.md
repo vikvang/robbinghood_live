@@ -117,6 +117,7 @@ pip install -r requirements.txt
 PERPLEXITY_API_KEY=your_perplexity_api_key
 OPENAI_API_KEY=your_openai_api_key
 GOOGLE_CREDENTIALS_PATH=path/to/your/google_credentials.json
+GEMINI_API_KEY = your_gemini_api_key
 ```
 
 4. Set up Google Cloud Vision API:

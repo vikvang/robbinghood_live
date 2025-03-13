@@ -15,11 +15,13 @@ class RobbinHoodApp:
         
         from ai.perplexity import PerplexityProcessor
         from ai.gpt4 import GPT4Processor
+        from ai.gemini import GeminiProcessor
         
         self.ai_processors = {
             "gpt4": GPT4Processor(config.openai_api_key),
             "sonar_pro": PerplexityProcessor(config.perplexity_api_key, model="sonar-pro"),
-            "sonar": PerplexityProcessor(config.perplexity_api_key, model="sonar")
+            "sonar": PerplexityProcessor(config.perplexity_api_key, model="sonar"),
+            "gemini": GeminiProcessor(config.google_api_key,model="gemini-2.0-flash")
         }
     
     def run(self):
@@ -333,6 +335,7 @@ class RobbinHoodApp:
                                 executor.submit(get_model_result, "gpt4")
                                 executor.submit(get_model_result, "sonar_pro")
                                 executor.submit(get_model_result, "sonar")
+                                executor.submit(get_model_result, "gemini")
                                 
                                 # Wait for all to complete
                                 executor.shutdown(wait=True)
@@ -341,16 +344,31 @@ class RobbinHoodApp:
                             gpt4_result = results["gpt4"]["result"]
                             sonar_pro_result = results["sonar_pro"]["result"]
                             sonar_result = results["sonar"]["result"]
+                            gemini_result = results["gemini"]["result"]
                             
                             print("\n" + "="*60)
-                            if gpt4_result == sonar_pro_result == sonar_result:
+                            if gpt4_result == sonar_pro_result == sonar_result == gemini_result:
                                 print("All models agree on the answer!")
+                            elif gpt4_result == sonar_pro_result == sonar_result:
+                                print("GPT-4, Sonar Pro, and Sonar agree, but Gemini differs")
+                            elif gpt4_result == sonar_pro_result == gemini_result:
+                                print("GPT-4, Sonar Pro, and Gemini agree, but Sonar differs")
+                            elif gpt4_result == sonar_result == gemini_result:
+                                print("GPT-4, Sonar, and Gemini agree, but Sonar Pro differs")
+                            elif sonar_pro_result == sonar_result == gemini_result:
+                                print("Sonar Pro, Sonar, and Gemini agree, but GPT-4 differs")
+                            elif gpt4_result == sonar_pro_result:
+                                print("GPT-4 and Sonar Pro agree, but Sonar and Gemini differ")
+                            elif gpt4_result == sonar_result:
+                                print("GPT-4 and Sonar agree, but Sonar Pro and Gemini differ")
+                            elif gpt4_result == gemini_result:
+                                print("GPT-4 and Gemini agree, but Sonar Pro and Sonar differ")
                             elif sonar_pro_result == sonar_result:
-                                print("Perplexity models agree, but GPT-4 differs")
-                            elif sonar_pro_result == gpt4_result:
-                                print("Sonar Pro and GPT-4 agree, but Sonar differs")
-                            elif sonar_result == gpt4_result:
-                                print("Sonar and GPT-4 agree, but Sonar Pro differs")
+                                print("Sonar Pro and Sonar agree, but GPT-4 and Gemini differ")
+                            elif sonar_pro_result == gemini_result:
+                                print("Sonar Pro and Gemini agree, but GPT-4 and Sonar differ")
+                            elif sonar_result == gemini_result:
+                                print("Sonar and Gemini agree, but GPT-4 and Sonar Pro differ")
                             else:
                                 print("❌ All models give different answers")
                             print("="*60 + "\n")

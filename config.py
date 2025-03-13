@@ -12,6 +12,7 @@ class Config:
         self.perplexity_api_key = os.getenv("PERPLEXITY_API_KEY")
         self.openai_api_key = os.getenv("OPENAI_API_KEY")
         self.google_credentials_path = os.getenv("GOOGLE_CREDENTIALS_PATH")
+        self.google_api_key = os.getenv("GEMINI_API_KEY")
         
         self._validate_credentials()
         
@@ -25,6 +26,8 @@ class Config:
             raise ValueError("OPENAI_API_KEY environment variable is not set or empty")
         if not self.google_credentials_path:
             raise ValueError("GOOGLE_CREDENTIALS_PATH environment variable is not set or empty")
+        if not self.google_api_key:
+            raise ValueError("GEMINI_API_KEY environment variable is not set or empty")
     
     def _init_vision_client(self):
         """Initialize and return a Google Vision client"""

@@ -4,3 +4,4 @@ python-dotenv>=0.15.0
 pynput
 google-cloud-vision>=2.0.0
 numpy>=1.19.0 
+google-genai
