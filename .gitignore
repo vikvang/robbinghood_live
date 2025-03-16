@@ -31,3 +31,4 @@ var/
 
 # Temporary files
 temp_capture.jpg
+service-account-key.json
