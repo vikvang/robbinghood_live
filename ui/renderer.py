@@ -1,4 +1,5 @@
 import cv2
+from core.utils import normalize_answer
 
 class TextRenderer:
     """Handles text rendering with wrapping and formatting"""
@@ -103,7 +104,12 @@ class TextRenderer:
                 sonar_pro_result = results["sonar_pro"]["result"]
                 sonar_result = results["sonar"]["result"]
                 
-                if gpt4_result == sonar_pro_result == sonar_result:
+                # Normalize answers for comparison
+                gpt4_normalized = normalize_answer(gpt4_result)
+                sonar_pro_normalized = normalize_answer(sonar_pro_result)
+                sonar_normalized = normalize_answer(sonar_result)
+                
+                if gpt4_normalized == sonar_pro_normalized == sonar_normalized:
                     cv2.putText(display_frame, "All models agree!", (10, y_pos), 
                               cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
                 else:

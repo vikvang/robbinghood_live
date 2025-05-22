@@ -27,7 +27,7 @@ class PerplexityProcessor(BaseAIProcessor):
                 },
                 {
                     "role": "user",
-                    "content": f"This image contains a multiple choice question. Using the latest information tell me which answer is correct. Only tell me the correct answer, no explanation needed.\n\n{text}"
+                    "content": f"This image contains a multiple choice question. Using the latest information tell me which answer is correct. Only tell me the correct answer, no explanation needed.\n\n{text}\n\nIMPORTANT OUTPUT FORMATTING INSTRUCTIONS:\n- If the question has multiple choice options (A, B, C, D, etc.), respond with ONLY the letter (e.g., 'A' or 'B')\n- If the question asks for a number, respond with ONLY the number (e.g., '4' not 'four' or '4 times')\n- If the question asks for a time period, respond with the most concise standard form (e.g., 'Quarterly' for questions about reporting frequency)\n- If the question asks for a percentage, respond with ONLY the number and % symbol (e.g., '15%')\n- If the question asks for a dollar amount, respond with ONLY the number and $ symbol (e.g., '$100')\n- Do not include periods, explanatory text, or elaboration\n- Do not include phrases like 'The answer is' or 'The correct answer is'\n- Respond with the most standardized, concise form possible"
                 }
             ]
         }

@@ -23,7 +23,17 @@ class GeminiProcessor(BaseAIProcessor):
             
             This image contains a multiple choice question. Using the latest accurate information from search results, tell me which answer is correct. Only tell me the correct answer letter (A, B, C, D, etc.), no explanation needed.
             
-            Question: {text}"""
+            Question: {text}
+            
+            IMPORTANT OUTPUT FORMATTING INSTRUCTIONS:
+            - If the question has multiple choice options (A, B, C, D, etc.), respond with ONLY the letter (e.g., 'A' or 'B')
+            - If the question asks for a number, respond with ONLY the number (e.g., '4' not 'four' or '4 times')
+            - If the question asks for a time period, respond with the most concise standard form (e.g., 'Quarterly' for questions about reporting frequency)
+            - If the question asks for a percentage, respond with ONLY the number and % symbol (e.g., '15%')
+            - If the question asks for a dollar amount, respond with ONLY the number and $ symbol (e.g., '$100')
+            - Do not include periods, explanatory text, or elaboration
+            - Do not include phrases like 'The answer is' or 'The correct answer is'
+            - Respond with the most standardized, concise form possible"""
             
             # Send the request with Google Search grounding enabled
             response = self.client.models.generate_content(
