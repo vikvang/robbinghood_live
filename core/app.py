@@ -346,29 +346,36 @@ class RobbinHoodApp:
                             sonar_result = results["sonar"]["result"]
                             gemini_result = results["gemini"]["result"]
                             
+                            # Normalize all answers for semantic comparison
+                            from core.utils import normalize_answer
+                            gpt4_normalized = normalize_answer(gpt4_result)
+                            sonar_pro_normalized = normalize_answer(sonar_pro_result)
+                            sonar_normalized = normalize_answer(sonar_result)
+                            gemini_normalized = normalize_answer(gemini_result)
+                            
                             print("\n" + "="*60)
-                            if gpt4_result == sonar_pro_result == sonar_result == gemini_result:
-                                print("All models agree on the answer!")
-                            elif gpt4_result == sonar_pro_result == sonar_result:
-                                print("GPT-4, Sonar Pro, and Sonar agree, but Gemini differs")
-                            elif gpt4_result == sonar_pro_result == gemini_result:
-                                print("GPT-4, Sonar Pro, and Gemini agree, but Sonar differs")
-                            elif gpt4_result == sonar_result == gemini_result:
-                                print("GPT-4, Sonar, and Gemini agree, but Sonar Pro differs")
-                            elif sonar_pro_result == sonar_result == gemini_result:
-                                print("Sonar Pro, Sonar, and Gemini agree, but GPT-4 differs")
-                            elif gpt4_result == sonar_pro_result:
-                                print("GPT-4 and Sonar Pro agree, but Sonar and Gemini differ")
-                            elif gpt4_result == sonar_result:
-                                print("GPT-4 and Sonar agree, but Sonar Pro and Gemini differ")
-                            elif gpt4_result == gemini_result:
-                                print("GPT-4 and Gemini agree, but Sonar Pro and Sonar differ")
-                            elif sonar_pro_result == sonar_result:
-                                print("Sonar Pro and Sonar agree, but GPT-4 and Gemini differ")
-                            elif sonar_pro_result == gemini_result:
-                                print("Sonar Pro and Gemini agree, but GPT-4 and Sonar differ")
-                            elif sonar_result == gemini_result:
-                                print("Sonar and Gemini agree, but GPT-4 and Sonar Pro differ")
+                            if gpt4_normalized == sonar_pro_normalized == sonar_normalized == gemini_normalized:
+                                print("✅ All models agree on the answer!")
+                            elif gpt4_normalized == sonar_pro_normalized == sonar_normalized:
+                                print("⚠️ GPT-4, Sonar Pro, and Sonar agree, but Gemini differs")
+                            elif gpt4_normalized == sonar_pro_normalized == gemini_normalized:
+                                print("⚠️ GPT-4, Sonar Pro, and Gemini agree, but Sonar differs")
+                            elif gpt4_normalized == sonar_normalized == gemini_normalized:
+                                print("⚠️ GPT-4, Sonar, and Gemini agree, but Sonar Pro differs")
+                            elif sonar_pro_normalized == sonar_normalized == gemini_normalized:
+                                print("⚠️ Sonar Pro, Sonar, and Gemini agree, but GPT-4 differs")
+                            elif gpt4_normalized == sonar_pro_normalized:
+                                print("⚠️ GPT-4 and Sonar Pro agree, but Sonar and Gemini differ")
+                            elif gpt4_normalized == sonar_normalized:
+                                print("⚠️ GPT-4 and Sonar agree, but Sonar Pro and Gemini differ")
+                            elif gpt4_normalized == gemini_normalized:
+                                print("⚠️ GPT-4 and Gemini agree, but Sonar Pro and Sonar differ")
+                            elif sonar_pro_normalized == sonar_normalized:
+                                print("⚠️ Sonar Pro and Sonar agree, but GPT-4 and Gemini differ")
+                            elif sonar_pro_normalized == gemini_normalized:
+                                print("⚠️ Sonar Pro and Gemini agree, but GPT-4 and Sonar differ")
+                            elif sonar_normalized == gemini_normalized:
+                                print("⚠️ Sonar and Gemini agree, but GPT-4 and Sonar Pro differ")
                             else:
                                 print("❌ All models give different answers")
                             print("="*60 + "\n")
